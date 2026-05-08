@@ -5,6 +5,11 @@
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
+if (import.meta.env.DEV) {
+  console.log('[LeadService] API Base URL:', API_BASE_URL);
+}
+
+
 export const leadService = {
   async createLead(leadData) {
     try {
