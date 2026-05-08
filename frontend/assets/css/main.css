@@ -1,0 +1,338 @@
+/* =============================================
+   CarLead — Design System Global
+   075 Veículos | CSS Puro | mobile-first
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap');
+
+/* ── Variáveis ──────────────────────────────── */
+:root {
+  --color-black:       #111111;
+  --color-black-soft:  #1A1A1A;
+  --color-black-card:  #1E1E1E;
+  --color-black-input: #252525;
+  --color-gold:        #F2C300;
+  --color-gold-hover:  #D4AB00;
+  --color-gold-dim:    rgba(242, 195, 0, 0.12);
+  --color-white:       #FFFFFF;
+  --color-gray-light:  #AAAAAA;
+  --color-gray-mid:    #666666;
+  --color-success:     #22C55E;
+  --color-error:       #EF4444;
+
+  --font-body:    'Inter', sans-serif;
+  --font-display: 'Bebas Neue', sans-serif;
+
+  --shadow-card:    0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-gold:    0 0 20px rgba(242, 195, 0, 0.25);
+  --shadow-btn:     0 4px 16px rgba(242, 195, 0, 0.4);
+
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  32px;
+
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --max-width: 1200px;
+  --section-padding: 80px 20px;
+  --container-px: 20px;
+}
+
+/* ── Reset ──────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ── Utilitários ────────────────────────────── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-px);
+  width: 100%;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.gold-text {
+  color: var(--color-gold);
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  background: var(--color-gold-dim);
+  border: 1px solid rgba(242, 195, 0, 0.3);
+  padding: 4px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: clamp(1.5rem, 5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  word-break: break-word;
+}
+
+.section-subtitle {
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  color: var(--color-gray-light);
+  max-width: 560px;
+  width: 100%;
+}
+
+/* ── Botões ─────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  white-space: nowrap;
+  min-height: 44px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: var(--color-black);
+  box-shadow: var(--shadow-btn);
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(242, 195, 0, 0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-white);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.btn-lg {
+  padding: clamp(14px, 3vw, 18px) clamp(24px, 5vw, 40px);
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  border-radius: var(--radius-lg);
+}
+
+.btn-full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ── Cards ──────────────────────────────────── */
+.card {
+  background: var(--color-black-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 4vw, 32px) clamp(16px, 4vw, 28px);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+  width: 100%;
+}
+
+.card:hover {
+  border-color: rgba(242, 195, 0, 0.25);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* ── Formulário ─────────────────────────────── */
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--color-black-input);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(242, 195, 0, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--color-gray-mid);
+}
+
+.form-input.error {
+  border-color: var(--color-error);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-light);
+  margin-bottom: 8px;
+}
+
+.form-error-msg {
+  font-size: 0.8rem;
+  color: var(--color-error);
+  margin-top: 6px;
+}
+
+/* ── Divider com gradiente ──────────────────── */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-gold), transparent);
+  border-radius: 2px;
+  margin: 16px 0;
+}
+
+/* ── Scroll bar ─────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 3px;
+}
+
+/* ── Animações ──────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(242, 195, 0, 0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(242, 195, 0, 0); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.6s ease both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease both;
+}
+
+/* ── Responsivo ─────────────────────────────── */
+@media (max-width: 1024px) {
+  :root {
+    --container-px: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 56px 0;
+    --container-px: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 48px 0;
+    --container-px: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    --section-padding: 40px 0;
+    --container-px: 12px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+  }
+
+  .btn-lg {
+    padding: 13px 22px;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --container-px: 10px;
+  }
+
+  .btn {
+    font-size: 0.82rem;
+  }
+}

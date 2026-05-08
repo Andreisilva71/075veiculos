@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="075 Veículos — Compre, venda ou troque seu veículo com transparência, agilidade e as melhores condições do mercado. Preencha nosso formulário e receba uma proposta em até 24h." />
+  <meta name="keywords" content="comprar carro, vender carro, trocar carro, veículos, 075 veículos, automotivo" />
+  <meta property="og:title" content="075 Veículos — Negociação Automotiva Premium" />
+  <meta property="og:description" content="Compre, venda ou troque seu veículo com quem entende do negócio." />
+  <meta property="og:type" content="website" />
+  <title>075 Veículos — Compra, Venda e Troca de Veículos Premium</title>
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- Components Styles -->
+  <link rel="stylesheet" href="./assets/css/components.css" />
+
+  <!-- Vue.js 3 via CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Services -->
+  <script src="./services/leadService.js"></script>
+
+  <!-- Components -->
+  <script src="./components/AppHeader.js"></script>
+  <script src="./components/HeroSection.js"></script>
+  <script src="./components/BenefitsSection.js"></script>
+  <script src="./components/TestimonialsSection.js"></script>
+  <script src="./components/StepInterest.js"></script>
+  <script src="./components/StepVehicle.js"></script>
+  <script src="./components/StepPrice.js"></script>
+  <script src="./components/StepTimeline.js"></script>
+  <script src="./components/StepContact.js"></script>
+  <script src="./components/SuccessScreen.js"></script>
+  <script src="./components/MultiStepForm.js"></script>
+
+  <!-- Views -->
+  <script src="./views/HomeView.js"></script>
+
+  <!-- App Bootstrap -->
+  <script>
+    const app = Vue.createApp(HomeView);
+
+    // Registrar componentes globalmente
+    app.component('AppHeader', AppHeader);
+    app.component('HeroSection', HeroSection);
+    app.component('BenefitsSection', BenefitsSection);
+    app.component('TestimonialsSection', TestimonialsSection);
+    app.component('MultiStepForm', MultiStepForm);
+    app.component('StepInterest', StepInterest);
+    app.component('StepVehicle', StepVehicle);
+    app.component('StepPrice', StepPrice);
+    app.component('StepTimeline', StepTimeline);
+    app.component('StepContact', StepContact);
+    app.component('SuccessScreen', SuccessScreen);
+
+    app.mount('#app');
+  </script>
+</body>
+</html>
