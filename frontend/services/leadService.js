@@ -3,7 +3,7 @@
    async/await + try/catch (AI-RULES.md)
    ============================================= */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://zero75veiculos.onrender.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://zero75veiculos.onrender.com/api';
 
 if (import.meta.env.DEV) {
   console.log('[LeadService] API Base URL:', API_BASE_URL);

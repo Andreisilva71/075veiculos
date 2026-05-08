@@ -31,7 +31,7 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`=============================================`);
   console.log(`🚀 Servidor 075 Veículos online!`);
   console.log(`📡 Porta: ${PORT}`);
-  console.log(`🌐 Ambiente: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`🌐 Servidor: https://zero75veiculos.onrender.com`);
   console.log(`=============================================`);
 });
 
