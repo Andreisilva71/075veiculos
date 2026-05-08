@@ -2,7 +2,7 @@
    StepInterest — Step 1: Tipo de interesse
    ============================================= */
 
-const StepInterest = {
+export const StepInterest = {
   name: 'StepInterest',
   props: {
     modelValue: { type: String, default: '' },

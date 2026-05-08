@@ -1,0 +1,17 @@
+{
+  "name": "carlead-frontend",
+  "version": "1.0.0",
+  "description": "075 Veículos — Frontend Vue 3 + Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

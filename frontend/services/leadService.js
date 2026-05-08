@@ -3,9 +3,9 @@
    async/await + try/catch (AI-RULES.md)
    ============================================= */
 
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
-const leadService = {
+export const leadService = {
   async createLead(leadData) {
     try {
       const response = await fetch(`${API_BASE_URL}/leads`, {

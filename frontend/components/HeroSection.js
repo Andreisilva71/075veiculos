@@ -2,7 +2,7 @@
    HeroSection — Hero com CTA e imagem premium
    ============================================= */
 
-const HeroSection = {
+export const HeroSection = {
   name: 'HeroSection',
   methods: {
     scrollToForm() {

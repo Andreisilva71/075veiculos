@@ -2,7 +2,7 @@
    StepTimeline — Step 4: Prazo para fechar negócio
    ============================================= */
 
-const StepTimeline = {
+export const StepTimeline = {
   name: 'StepTimeline',
   props: {
     modelValue: { type: String, default: '' },

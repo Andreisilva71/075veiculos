@@ -2,7 +2,7 @@
    StepVehicle — Step 2: Tipo de veículo
    ============================================= */
 
-const StepVehicle = {
+export const StepVehicle = {
   name: 'StepVehicle',
   props: {
     modelValue: { type: String, default: '' },

@@ -2,16 +2,10 @@
    MultiStepForm — Orquestrador do formulário
    ============================================= */
 
-const MultiStepForm = {
+import { leadService } from '../services/leadService.js';
+
+export const MultiStepForm = {
   name: 'MultiStepForm',
-  components: {
-    StepInterest,
-    StepVehicle,
-    StepPrice,
-    StepTimeline,
-    StepContact,
-    SuccessScreen,
-  },
   data() {
     return {
       currentStep: 1,

@@ -2,7 +2,7 @@
    AppHeader — Navbar fixa premium
    ============================================= */
 
-const AppHeader = {
+export const AppHeader = {
   name: 'AppHeader',
   data() {
     return {

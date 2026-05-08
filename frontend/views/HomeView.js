@@ -1,16 +1,10 @@
 /* =============================================
    HomeView — View principal que monta todas as seções
+   Componentes registrados globalmente via main.js
    ============================================= */
 
-const HomeView = {
+export const HomeView = {
   name: 'HomeView',
-  components: {
-    AppHeader,
-    HeroSection,
-    BenefitsSection,
-    TestimonialsSection,
-    MultiStepForm,
-  },
   template: `
     <div class="home-view">
       <app-header />

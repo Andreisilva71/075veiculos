@@ -2,7 +2,7 @@
    BenefitsSection — Cards de benefícios
    ============================================= */
 
-const BenefitsSection = {
+export const BenefitsSection = {
   name: 'BenefitsSection',
   data() {
     return {

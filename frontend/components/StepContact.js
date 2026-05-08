@@ -2,7 +2,7 @@
    StepContact — Step 5: Dados de contato
    ============================================= */
 
-const StepContact = {
+export const StepContact = {
   name: 'StepContact',
   props: {
     modelValue: {

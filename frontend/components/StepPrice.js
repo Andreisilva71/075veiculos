@@ -2,7 +2,7 @@
    StepPrice — Step 3: Faixa de preço
    ============================================= */
 
-const StepPrice = {
+export const StepPrice = {
   name: 'StepPrice',
   props: {
     modelValue: { type: String, default: '' },

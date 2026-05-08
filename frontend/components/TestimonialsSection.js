@@ -2,7 +2,7 @@
    TestimonialsSection — Depoimentos de clientes
    ============================================= */
 
-const TestimonialsSection = {
+export const TestimonialsSection = {
   name: 'TestimonialsSection',
   data() {
     return {

@@ -2,7 +2,7 @@
    SuccessScreen — Tela de sucesso pós-envio
    ============================================= */
 
-const SuccessScreen = {
+export const SuccessScreen = {
   name: 'SuccessScreen',
   props: {
     leadName: { type: String, default: '' },
