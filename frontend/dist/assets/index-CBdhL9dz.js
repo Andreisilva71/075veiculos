@@ -39,7 +39,7 @@
       <div class="container app-header__inner">
         <div class="app-header__logo">
           <img
-            src="./assets/images/hero_075veiculos.jpg"
+            src="/images/hero_075veiculos.jpg"
             alt="075 Veículos logo"
             class="logo-img"
           />
@@ -97,7 +97,7 @@
         <div class="hero-image-wrapper animate-fade-in">
           <div class="hero-image-glow"></div>
           <img
-            src="./assets/images/hero_075veiculos.jpg"
+            src="/images/hero_075veiculos.jpg"
             alt="Veículo de luxo premium 075 Veículos"
             class="hero-image"
           />

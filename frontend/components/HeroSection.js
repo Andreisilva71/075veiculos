@@ -52,7 +52,7 @@ export const HeroSection = {
         <div class="hero-image-wrapper animate-fade-in">
           <div class="hero-image-glow"></div>
           <img
-            src="./assets/images/hero_075veiculos.jpg"
+            src="/images/hero_075veiculos.jpg"
             alt="Veículo de luxo premium 075 Veículos"
             class="hero-image"
           />
