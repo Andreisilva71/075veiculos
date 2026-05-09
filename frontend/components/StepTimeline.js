@@ -11,9 +11,9 @@ export const StepTimeline = {
   data() {
     return {
       options: [
-        { value: 'Esse mês',       label: 'Esse mês',       urgency: 'high',   icon: '⚡' },
-        { value: 'Nos próx. 3 meses', label: 'Próximos 3 meses', urgency: 'mid', icon: '📅' },
-        { value: 'Nos próx. 6 meses', label: 'Próximos 6 meses', urgency: 'low', icon: '🗓️' },
+        { value: 'Hoje',       label: 'Hoje',       urgency: 'high',   icon: '⚡' },
+        { value: 'Essa semana', label: 'Essa semana', urgency: 'mid', icon: '📅' },
+        { value: 'Esse mês', label: 'Esse mês', urgency: 'low', icon: '🗓️' },
         { value: 'Só pesquisando', label: 'Só pesquisando', urgency: 'info',  icon: '🔍' },
       ],
     };
